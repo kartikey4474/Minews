@@ -1,0 +1,2 @@
+# Minews
+Minews is basicically mini news App . which is a news app that selects latest and best news from multiple national and international sources and summarises them to present in a short and crisp  words, personalized for you, in both, English or Hindi. All summarised stories contain only headlines and facts, no opinions, to help you stay informed of the current affairs. Whether it’s the latest government policies or shakeups in bollywood, we get them covered and delivered super fast! Get updated with the latest news and current affairs in a click!
