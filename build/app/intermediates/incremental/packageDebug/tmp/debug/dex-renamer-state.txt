@@ -1,0 +1,4 @@
+#Sun Sep 04 15:38:08 IST 2022
+base.0=D\:\\Flutter_test\\fluttertest\\DatingApp\\ShopApp\\skype_clone\\tiktok_clone\\ticketbooking\\Minews\\mi_news\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
