@@ -25,7 +25,7 @@ https://docs.flutter.dev/get-started/install
 2. Clone the repository from GitHub:
 
 ```bash
-git clone https://github.com/kartikey4474/TrackerGo.git
+git clone https://github.com/kartikey4474/Minews.git
 ```
 3. Check for Flutter setup and connected devices:
 ```bash
