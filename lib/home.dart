@@ -43,28 +43,66 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: <Widget>[
-            Text(
-              "Mi",
-              style: TextStyle(
-                  color: Colors.black87,
-                  fontSize: 45,
-                  fontWeight: FontWeight.w600),
-            ),
-            Text(
-              "News",
-              style: TextStyle(
-                  color: Colors.blue,
-                  fontSize: 40,
-                  fontWeight: FontWeight.w600),
-            )
-          ],
+        title: Transform.translate(
+          offset: Offset(-20.0, 0.0),
+          child: Image.asset(
+            'assets/images/MiNews.png',
+            height: 120,
+            width: 120,
+          ),
         ),
+        iconTheme: IconThemeData(color: Color.fromRGBO(82, 113, 255, 1)),
+        // title: Row(
+        //   mainAxisAlignment: MainAxisAlignment.start,
+        //   children: <Widget>[
+        //     Text(
+        //       "Mi",
+        //       style: TextStyle(
+        //           color: Colors.black87,
+        //           fontSize: 45,
+        //           fontWeight: FontWeight.w600),
+        //     ),
+        //     Text(
+        //       "News",
+        //       style: TextStyle(
+        //           color: Colors.blue,
+        //           fontSize: 40,
+        //           fontWeight: FontWeight.w600),
+        //     )
+        //   ],
+        // ),
         backgroundColor: Colors.transparent,
         elevation: 0.0,
       ),
+      drawer: Drawer(
+          child: ListView(
+              // Important: Remove any padding from the ListView.
+              padding: EdgeInsets.zero,
+              children: <Widget>[
+            DrawerHeader(
+              child: Image.asset('assets/images/MiNews.png', fit: BoxFit.cover),
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.info,
+                color: Color.fromRGBO(82, 113, 255, 1),
+              ),
+              title: Text("About us"),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.contact_page_rounded,
+                color: Color.fromRGBO(82, 113, 255, 1),
+              ),
+              title: Text("Contact us"),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+          ])),
       body: SafeArea(
         child: _loading
             ? Center(
